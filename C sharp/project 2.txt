@@ -1,0 +1,37 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+       
+        int minInt = int.MinValue;    
+        int maxInt = int.MaxValue;    
+        Console.WriteLine($"int range: {minInt} to {maxInt}");
+
+       
+        long minLong = long.MinValue; 
+        long maxLong = long.MaxValue; 
+        Console.WriteLine($"long range: {minLong} to {maxLong}");
+
+       
+        double minDouble = double.MinValue; 
+        double maxDouble = double.MaxValue; 
+        Console.WriteLine($"double range: {minDouble} to {maxDouble}");
+
+        double positiveInfinity = double.PositiveInfinity;
+        double negativeInfinity = double.NegativeInfinity;
+        double notANumber = double.NaN;
+
+        
+        string minString = ""; 
+        
+        
+        Console.WriteLine($"String minimum length example: \"{minString}\" (length {minString.Length})");
+
+        
+        char minChar = char.MinValue; 
+        char maxChar = char.MaxValue; 
+        Console.WriteLine($"char range: '\\u{(int)minChar:x4}' to '\\u{(int)maxChar:x4}'");
+    }
+}
